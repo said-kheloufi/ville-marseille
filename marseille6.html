@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marseille6.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon">&#9776; Menu</div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="marseille.html">Accueil</a></li>
+                <li><a href="marseille1.html">Histoire</a></li>
+                <li><a href="marseille2.html">Randonnées</a></li>
+                <li><a href="marseille3.html">Plages</a></li>
+                <li><a href="marseille4.html">Parcs publics</a></li>
+                <li><a href="marseille5.html">Musées</a></li>
+                <li><a href="marseille6.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <img src="maseillelogo.png" alt="1">
+
+    </header>
+
+
+
+    <div class="square">
+        <section class="contact-form">
+            <h2>Formulaire de Contact</h2>
+            <form action="traitement.php" method="post">
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite">
+                    <option value="Monsieur">Monsieur</option>
+                    <option value="Madame">Madame</option>
+                </select>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="adresse">Adresse Postale :</label>
+                <textarea id="adresse" name="adresse" rows="4" required></textarea>
+
+                <label for="confidentialite">J'accepte les politiques de confidentialité de l'entreprise :</label>
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>

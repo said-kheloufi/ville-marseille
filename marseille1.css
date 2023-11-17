@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image: url(background\ histoire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #fdfdfd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    color: #000000;
+}
+
+
+.menu-icon:hover+.menu {
+    display: block;
+}
+
+.menu:hover {
+    display: block;
+}
+
+.menu:hover .menu-icon {
+    background-color: #f9f9f9;
+    
+}
+
+.menu:hover .menu {
+    display: block;
+}
+
+header {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.square {
+    width: 1200px;
+    height: 5440px;
+    background-color: #009EDF;
+    background-image: url('votre-image.jpg');
+    background-size: cover;
+    background-clip: content-box;
+    padding: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2500px;
+}
+
+.text {
+    padding-right: 50px;
+    padding-left: 50px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.imageandtext {
+    float: left;
+
+}
+
+.imageandtext img {
+    float: left;
+    padding: 50px;
+    width: 30%;
+    height: 20%;
+    margin-right: 10%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.titre {
+    padding-left: 50px;
+
+}
+
+
+.imageandtext2 {
+    float: right;
+
+}
+
+.imageandtext2 img {
+    float: right;
+    padding: 50px;
+    width: 30%;
+    height: 20%;
+    margin-right: 10%;
+    transition: transform 0.5s ease-in-out;
+}
+
+header img {
+    width: 5%;
+    height: 5%;
+
+}
+
+.imageandtext:hover img,
+.imageandtext2:hover img {
+    transform: scale(1.1);
+}
+
+.titre:hover+.imageandtext .text,
+.titre:hover+.imageandtext2 .text {
+    opacity: 1;
+}

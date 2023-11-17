@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image: url(background\ marseille.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #fdfdfd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    color: #000000;
+}
+
+
+.menu-icon:hover+.menu {
+    display: block;
+}
+
+.menu:hover {
+    display: block;
+}
+
+.menu:hover .menu-icon {
+    background-color: #f9f9f9;
+
+}
+
+.menu:hover .menu {
+    display: block;
+}
+
+header {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+header img {
+    width: 5%;
+    height: 5%;
+
+}
+
+.square {
+    width: 1200px;
+    height: 4000px;
+    background-color: #ffffff;
+    background-image: url('votre-image.jpg');
+    background-size: cover;
+    background-clip: content-box;
+    padding: 50px;
+    color: #009EDF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1780px;
+}
+
+.titre {
+    padding-left: 50px;
+    color: #009EDF;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+.square img {
+    width: 1000px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.square:hover img {
+    transform: scale(1.1);
+
+}
+
+.square:hover img:not(:hover) {
+    transform: scale(0.9);
+}
